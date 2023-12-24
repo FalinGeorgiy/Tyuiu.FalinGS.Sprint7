@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using Tyuiu.FalinGS.Sprint7.Project.V2.Lib;
 
 namespace Tyuiu.FalinGS.Sprint7.Project.V2
 {
@@ -18,6 +19,8 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
         {
             InitializeComponent();
         }
+
+        DataService ds = new DataService();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -69,6 +72,13 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                     Console.WriteLine($"Строка {i} содержит недостаточное количество столбцов");
                 }
             }
+        }
+
+        private void Button_Sum_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\User\source\repos\Tyuiu.FalinGS.Sprint7\Tyuiu.FalinGS.Sprint7\bin\Debug\Base2.csv"; // задайте путь к файлу данных
+            int sum = ds.LoadFromDataFile(path); // вызываем метод LoadFromDataFile для получения суммы
+            textBoxSum.Text = sum.ToString(); // устанавливаем значение в текстовое поле на вашей форме
         }
     }
 }

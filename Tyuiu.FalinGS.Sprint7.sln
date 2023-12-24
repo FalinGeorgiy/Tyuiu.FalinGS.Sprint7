@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.FalinGS.Sprint7.Proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.FalinGS.Sprint7.Project.V2.Lib", "Tyuiu.FalinGS.Sprint7.Project.V2.Lib\Tyuiu.FalinGS.Sprint7.Project.V2.Lib.csproj", "{BE21B287-11DF-4B52-8634-F720D87B5B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.FalinGS.Sprint7.Project.V2.Test", "Tyuiu.FalinGS.Sprint7.Project.V2.Test\Tyuiu.FalinGS.Sprint7.Project.V2.Test.csproj", "{D6186343-BDCE-4616-9DDE-D08589887133}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{BE21B287-11DF-4B52-8634-F720D87B5B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE21B287-11DF-4B52-8634-F720D87B5B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE21B287-11DF-4B52-8634-F720D87B5B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6186343-BDCE-4616-9DDE-D08589887133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6186343-BDCE-4616-9DDE-D08589887133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6186343-BDCE-4616-9DDE-D08589887133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6186343-BDCE-4616-9DDE-D08589887133}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6B8CA1B8-E814-474C-9645-F6DC8BE31BFD} = {281527A1-BB07-4540-815B-310993B23462}
 		{BE21B287-11DF-4B52-8634-F720D87B5B98} = {281527A1-BB07-4540-815B-310993B23462}
+		{D6186343-BDCE-4616-9DDE-D08589887133} = {281527A1-BB07-4540-815B-310993B23462}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50C7E4F2-D113-4463-ACCC-61FD7149BF9E}

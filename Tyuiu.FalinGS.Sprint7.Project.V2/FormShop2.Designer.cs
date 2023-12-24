@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonShop1Graph_FGS = new System.Windows.Forms.Button();
             this.Diag_FGS = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox_Info = new System.Windows.Forms.GroupBox();
+            this.textBoxSum = new System.Windows.Forms.TextBox();
+            this.Button_Sum = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Diag_FGS)).BeginInit();
             this.groupBox_Info.SuspendLayout();
             this.SuspendLayout();
@@ -63,18 +65,18 @@
             // 
             // Diag_FGS
             // 
-            chartArea4.Name = "ChartArea1";
-            this.Diag_FGS.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.Diag_FGS.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.Diag_FGS.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.Diag_FGS.Legends.Add(legend2);
             this.Diag_FGS.Location = new System.Drawing.Point(295, 32);
             this.Diag_FGS.Name = "Diag_FGS";
-            series4.BorderWidth = 3;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "Оборот тыс.руб";
-            this.Diag_FGS.Series.Add(series4);
+            series2.BorderWidth = 3;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Оборот тыс.руб";
+            this.Diag_FGS.Series.Add(series2);
             this.Diag_FGS.Size = new System.Drawing.Size(546, 330);
             this.Diag_FGS.TabIndex = 4;
             this.Diag_FGS.Text = "chart1";
@@ -89,11 +91,30 @@
             this.groupBox_Info.TabStop = false;
             this.groupBox_Info.Text = "Информаци";
             // 
+            // textBoxSum
+            // 
+            this.textBoxSum.Location = new System.Drawing.Point(587, 370);
+            this.textBoxSum.Name = "textBoxSum";
+            this.textBoxSum.Size = new System.Drawing.Size(124, 20);
+            this.textBoxSum.TabIndex = 7;
+            // 
+            // Button_Sum
+            // 
+            this.Button_Sum.Location = new System.Drawing.Point(431, 368);
+            this.Button_Sum.Name = "Button_Sum";
+            this.Button_Sum.Size = new System.Drawing.Size(149, 23);
+            this.Button_Sum.TabIndex = 6;
+            this.Button_Sum.Text = "Общая сумма оборота";
+            this.Button_Sum.UseVisualStyleBackColor = true;
+            this.Button_Sum.Click += new System.EventHandler(this.Button_Sum_Click);
+            // 
             // FormShop2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 450);
+            this.Controls.Add(this.textBoxSum);
+            this.Controls.Add(this.Button_Sum);
             this.Controls.Add(this.buttonShop1Graph_FGS);
             this.Controls.Add(this.Diag_FGS);
             this.Controls.Add(this.groupBox_Info);
@@ -103,6 +124,7 @@
             this.groupBox_Info.ResumeLayout(false);
             this.groupBox_Info.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,5 +134,7 @@
         private System.Windows.Forms.Button buttonShop1Graph_FGS;
         private System.Windows.Forms.DataVisualization.Charting.Chart Diag_FGS;
         private System.Windows.Forms.GroupBox groupBox_Info;
+        private System.Windows.Forms.TextBox textBoxSum;
+        private System.Windows.Forms.Button Button_Sum;
     }
 }
