@@ -42,11 +42,11 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                 if (!File.Exists(filePath) || new FileInfo(filePath).Length == 0)
                 {
                     string header = "Месяц,Овощи,Напитки,Выпечка,Сладости,Крупы,Оборот";
-                    File.WriteAllText(filePath, header, Encoding.GetEncoding("Windows-1251"));
+                    File.WriteAllText(filePath, header, Encoding.GetEncoding("UTF-8"));
                 }
 
                 // Открываем файл для записи с указанием кодировки Windows-1251
-                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("Windows-1251")))
+                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("UTF-8")))
                 {
                     // Записываем данные в новую строку
                     sw.WriteLine(DataToSave.Replace(";", ","));
@@ -100,11 +100,11 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                 if (!File.Exists(filePath) || new FileInfo(filePath).Length == 0)
                 {
                     string header = "Месяц,Овощи,Напитки,Выпечка,Сладости,Крупы,Оборот";
-                    File.WriteAllText(filePath, header, Encoding.GetEncoding("Windows-1251"));
+                    File.WriteAllText(filePath, header, Encoding.GetEncoding("UTF-8"));
                 }
 
                 // Открываем файл для записи с указанием кодировки Windows-1251
-                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("Windows-1251")))
+                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("UTF-8")))
                 {
                     // Записываем данные в новую строку
                     sw.WriteLine(DataToSave.Replace(";", ","));
@@ -138,11 +138,11 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                 if (!File.Exists(filePath) || new FileInfo(filePath).Length == 0)
                 {
                     string header = "Месяц,Овощи,Напитки,Выпечка,Сладости,Крупы,Оборот";
-                    File.WriteAllText(filePath, header, Encoding.GetEncoding("Windows-1251"));
+                    File.WriteAllText(filePath, header, Encoding.GetEncoding("UTF-8"));
                 }
 
                 // Открываем файл для записи с указанием кодировки Windows-1251
-                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("Windows-1251")))
+                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("UTF-8")))
                 {
                     // Записываем данные в новую строку
                     sw.WriteLine(DataToSave.Replace(";", ","));
@@ -176,11 +176,11 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                 if (!File.Exists(filePath) || new FileInfo(filePath).Length == 0)
                 {
                     string header = "Месяц,Овощи,Напитки,Выпечка,Сладости,Крупы,Оборот";
-                    File.WriteAllText(filePath, header, Encoding.GetEncoding("Windows-1251"));
+                    File.WriteAllText(filePath, header, Encoding.GetEncoding("UTF-8"));
                 }
 
                 // Открываем файл для записи с указанием кодировки Windows-1251
-                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("Windows-1251")))
+                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("UTF-8")))
                 {
                     // Записываем данные в новую строку
                     sw.WriteLine(DataToSave.Replace(";", ","));
@@ -214,11 +214,11 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
                 if (!File.Exists(filePath) || new FileInfo(filePath).Length == 0)
                 {
                     string header = "Месяц,Овощи,Напитки,Выпечка,Сладости,Крупы,Оборот";
-                    File.WriteAllText(filePath, header, Encoding.GetEncoding("Windows-1251"));
+                    File.WriteAllText(filePath, header, Encoding.GetEncoding("UTF-8"));
                 }
 
                 // Открываем файл для записи с указанием кодировки Windows-1251
-                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("Windows-1251")))
+                using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.GetEncoding("UTF-8")))
                 {
                     // Записываем данные в новую строку
                     sw.WriteLine(DataToSave.Replace(";", ","));

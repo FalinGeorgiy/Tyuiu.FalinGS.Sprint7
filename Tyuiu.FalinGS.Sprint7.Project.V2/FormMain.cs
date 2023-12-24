@@ -448,11 +448,13 @@ namespace Tyuiu.FalinGS.Sprint7.Project.V2
 
         private void Search_FGS_TextChanged(object sender, EventArgs e)
         {
+            string searchText = Search_FGS.Text; // Получаем введенный текст
+
             for (int i = 0; i <= dataGridView_FGS.Rows.Count - 1; i++)
             {
                 for (int j = 0; j <= dataGridView_FGS.ColumnCount - 1; j++)
                 {
-                    if (dataGridView_FGS.Rows[i].Cells[j].Value != null && dataGridView_FGS.Rows[i].Cells[j].Value.ToString() == Search_FGS.Text)
+                    if (dataGridView_FGS.Rows[i].Cells[j].Value != null && dataGridView_FGS.Rows[i].Cells[j].Value.ToString() == searchText)
                     {
                         dataGridView_FGS.Rows[i].Cells[j].Selected = true;
                     }
